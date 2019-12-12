@@ -1,4 +1,4 @@
-{% set version = '1.1.1' %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/xptr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xptr/xptr_{{ version }}.tar.gz
-  sha256: a2b7de1712e615602fde502cf29aa592f44dcf3b65b6c2268e87174715bd55f6
+  sha256: 636ef0f1eff9b8f29f21a21a6467b66f23676be55c2a81d9e2f95672b9faf5a7
 
 build:
   merge_build_host: True  # [win]
