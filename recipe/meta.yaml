@@ -1,4 +1,4 @@
-{% set version = "1.1.3" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/xptr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xptr/xptr_{{ version }}.tar.gz
-  sha256: 3ba42f9d672edc11c6cebfe334b9784d8daf60ca290f67f97d3098df90dea20c
+  sha256: 3b098fd2ed691e0fab77b15468405d47f71f9077aa76956a0c09f6437bd94cb8
 
 build:
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,8 +41,7 @@ test:
 about:
   home: https://randy3k.github.io/xptr/
   license: MIT
-  summary: There is limited native support for external pointers in the R interface. This package provides some basic tools to verify, create and modify 'externalptr'
-    objects.
+  summary: There is limited native support for external pointers in the R interface. This package provides some basic tools to verify, create and modify 'externalptr' objects.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
